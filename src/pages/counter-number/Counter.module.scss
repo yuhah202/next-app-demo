@@ -1,0 +1,41 @@
+.Page {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.Button {
+  padding: 10px 30px;
+  font-size: 24px;
+
+  &Container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.Input {
+  width: 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.TextField {
+  font-size: 24px;
+}
