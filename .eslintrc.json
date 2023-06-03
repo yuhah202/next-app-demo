@@ -1,3 +1,114 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb-base",
+    "airbnb",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "js": true
+    },
+    "babelOptions": {
+      "presets": [
+        "@babel/preset-react"
+      ]
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/forbid-prop-types": [
+      1,
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
+    "object-curly-newline": 0,
+    "jsx-a11y/control-has-associated-label": [
+      0,
+      {
+        "controlComponents": [
+          "CustomButton"
+        ],
+        "ignoreElements": [
+          "button"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "import/no-unresolved": 0,
+    "default-param-last": "off",
+    "linebreak-style": 0,
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "@next/next/no-document-import-in-page": "off" ,
+  },
+  "plugins": []
 }
