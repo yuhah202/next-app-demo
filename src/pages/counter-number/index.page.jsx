@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCounterStore } from 'stores/createStore';
+import { useCounterStore } from 'stores/useCounterStore';
 import { Button } from '@mui/material';
 
 

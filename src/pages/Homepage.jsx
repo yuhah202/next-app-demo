@@ -22,6 +22,7 @@ function Homepage() {
         <Button
           className={styles.Button}
           variant='contained'
+          href="/to-do-list"
         >
           Todo List
         </Button>
